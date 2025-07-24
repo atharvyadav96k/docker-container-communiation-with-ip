@@ -10,7 +10,7 @@ app.get('/', (req, res)=>{
 });
 
 app.get('/getdata', (req, res)=>{
-    fetch("http://172.17.0.3:3000/")
+    fetch("http://backend:3000/")
     .then(response => response.json())
     .then(data => {
         res.json(data);
